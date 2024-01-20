@@ -4,7 +4,7 @@
     B[Invalid products] -->|Toggle ShowValidProducts btn| C(Valid products)
     A[ProductTestPage] -->|Without invalid products| C(Valid products)
     C --> |Click Test btn| D(TestInstanceDialog)
-    D --> |Click BeginTest btn| E(TestDataEntry)
+    D --> |Click BeginTest takes to actual testing page| E(TestDataEntry)
     E --> |Enter measurement & press enter| F(Validate measurement)
     F --> |Click Abort btn & enter reason for abort| G(Abort)
     F --> |Complete Test| H(Test Next Serial)
